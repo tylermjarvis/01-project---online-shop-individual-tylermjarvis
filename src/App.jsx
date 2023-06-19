@@ -23,15 +23,10 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <h1>Sunglass Shop</h1>
-
 
       <div className="products-container">
         <Products products={products} />
-      <h2>Popular Products</h2>
-        <ul className="product-grid">
 
-        </ul>
       </div>
     </div>
   );

@@ -9,10 +9,10 @@ const Products = ({ products }) => {
                         return (
                             <Product
                                 key={product.id}
-                                image={product.image[0]}
+                                images={product.images}
                                 name={product.name}
                                 description={product.description}
-                                price={product.price[0]}
+                                price={product.price}
                             />
                         );
                     })}

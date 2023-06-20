@@ -19,7 +19,6 @@
 body {
     font-family: "Courier New", Courier, monospace;
     line-height: 1.5;
-    border-top: var(--primary-color) solid 0.3rem;
     background: var(--background-color);
 }
 
@@ -29,13 +28,16 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    background-color: var(--primary-color);
 }
 
 .logo {
     width: 40%;
     height: auto;
     justify-self: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 .shop-name {
@@ -112,7 +114,8 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0.5rem 1rem;
+  grid-gap: 1.2rem;
+  margin: 1.2rem 1.8rem;
 }
 
 /*-- Products --*/
@@ -120,8 +123,8 @@ body {
   list-style: none;
   background-color: var(--secondary-color);
   padding: 1rem;
-  margin-bottom: 1.5rem;
   box-shadow: 0.2rem 0.2rem 0.8rem rgb(216, 216, 216);
+  display: grid;
 }
 
 .product-image {
@@ -131,19 +134,19 @@ body {
 }
 
 .product-name {
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
   margin-bottom: 0.5rem;
   color: var(--font-color);
 }
 
 .product-description {
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
 }
 
 .product-price {
-  padding: 0 0.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
   text-align: right;
@@ -180,7 +183,7 @@ body {
 .copyright {
   font-size: 0.8rem;
   align-self: center;
-  padding-left: 0.2rem;;
+  padding-left: 0.2rem;
 }
 
 .contact-container {
@@ -191,5 +194,91 @@ body {
 .contact-details {
   font-size: 0.8rem;
   margin-top: 0.2rem;
+}
+
+/*-- Tablet View --*/
+@media screen and (min-width: 45rem) {
+  .logo {
+    width: 28%;
+}
+
+.shop-name {
+    font-size: 3.5rem;
+}
+
+.special-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+  
+.product-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.product-item {
+  padding: 1rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.contact-container {
+  padding: 0.2rem;
+}
+
+.contact-details-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+}
+
+.contact-details {
+  font-size: 1rem;
+}
+}
+
+/*-- Desktop View --*/
+@media screen and (min-width: 64rem) {
+.container {
+  width: 64rem;
+  margin: 0 auto;
+}
+
+.header-grid {
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+    width: 25%;
+    height: auto;
+    justify-self: left;
+}
+
+.shop-name {
+    justify-self: left;
+    align-self: center;
+    font-size: 3rem;
+}
+
+.image-banner {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.special-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.product-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 }
 

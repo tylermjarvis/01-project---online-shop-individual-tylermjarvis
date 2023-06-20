@@ -1,6 +1,8 @@
 import { React, useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import FilterBy from "./components/FilterBy";
+import ImageBanner from "./components/ImageBanner";
 import Products from "./components/Products";
 
 // The function that makes the fetch request to the Products API
@@ -14,6 +16,7 @@ function App() {
   useEffect(() => {
     const loadData = async () => {
       const products = await getProducts();
+      console.log(products);
       setProducts(products);
     };
 
@@ -23,11 +26,11 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <FilterBy />
+      <div className="toolbar"></div>
+      <ImageBanner />
 
-      <div className="products-container">
-        <Products products={products} />
-
-      </div>
+      <Products products={products} />
     </div>
   );
 }

@@ -1,13 +1,21 @@
-const Product = ({ images, name, description, price }) => {
-    return (
-        <li className="product-item">
-            <img className="product-image" src={images} alt={name} />
-                <h3 className="product-name">{name}</h3>
-                    <p className="product-description">{description}</p>
-                    <p className="product-price">{price}</p>
-            <button>Buy Now</button>
-        </li>
-    )
-}
+const Product = ({ src, name, description, price, onCheckout }) => {
+  return (
+    <div className="products-container">
+      <li className="product-item">
+        <img className="product-image" src={src} alt={name} />
+        <h4 className="product-name">{name}</h4>
+        <p className="product-description">{description}</p>
+        <p className="product-price">
+          $
+          {price.toLocaleString("en-NZ", {
+            maximumFractionDigits: 2,
+            minimumFractionDigits: 2,
+          })}
+        </p>
+        <button onClick={onCheckout}>Buy Now</button>
+      </li>
+    </div>
+  );
+};
 
 export default Product;

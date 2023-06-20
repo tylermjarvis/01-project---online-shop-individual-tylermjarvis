@@ -6,4 +6,4 @@ const filterByCategory = (products, filterBy) => {
   return products.filter((product) => product.metadata.category === filterBy);
 };
 
-export default filterByCategory;
+export { filterByCategory };

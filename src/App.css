@@ -1,0 +1,195 @@
+/*-- Changing the default settings --*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-- Colours --*/
+:root {
+  --primary-color: #8bd3dd;
+  --secondary-color: #f3d2c1;
+  --background-color: #fefffe;
+  --font-color: #2e4649;
+}
+
+/*-- Generalised Styling --*/
+body {
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.5;
+    border-top: var(--primary-color) solid 0.3rem;
+    background: var(--background-color);
+}
+
+/*-- Mobile View --*/
+/*-- Header --*/
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+    justify-self: center;
+}
+
+.shop-name {
+    justify-self: center;
+    font-size: 2.8rem;
+    color: var(--font-color);
+    text-align: center;
+}
+
+
+/*-- Image Banner --*/
+.image-banner {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  display: block;
+}
+
+/*-- Trying to make a hero with text that stays in the middle of the image --*/
+/*
+.image-container {
+  background: "url('./images/japanese-snack-banner.jpg')" center center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+}
+
+.overlay-container {
+  position: absolute;
+  width:100%;
+  text-align:center;
+  z-index: 1;
+}
+
+.overlay-2 {
+  top: 10rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.overlay-products-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  opacity: 0.9;
+}
+
+.overlay-products-page-link:hover {
+  background-color: var(--font-color);
+  cursor: pointer;
+}
+*/
+
+/*-- Products Grid and Title --*/
+.special-title {
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.5rem 1rem;
+}
+
+/*-- Products --*/
+.product-item {
+  list-style: none;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem rgb(216, 216, 216);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.product-name {
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--font-color);
+}
+
+.product-description {
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.product-price {
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: right;
+  font-weight: bolder;
+  color: var(--font-color);
+}
+
+.buy-now {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem #e0c1b2;
+}
+
+.buy-now:hover {
+  background-color: var(--font-color);
+  cursor: pointer;
+}
+
+/*-- Footer --*/
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  grid-gap: 1.5rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  align-self: center;
+  padding-left: 0.2rem;;
+}
+
+.contact-container {
+  padding: 0.2rem;
+  justify-self: center;
+}
+
+.contact-details {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+

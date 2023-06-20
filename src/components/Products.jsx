@@ -4,7 +4,7 @@ import { checkout } from "../services/checkout";
 const Products = ({ products }) => {
   return (
     <>
-      <h3>Popular Products</h3>
+      <h2 className="special-title">Popular Products</h2>
       <ul className="product-grid">
         {products.map((product) => {
           const {

@@ -3,7 +3,7 @@ const Product = ({ src, name, description, price, onCheckout }) => {
     <div className="products-container">
       <li className="product-item">
         <img className="product-image" src={src} alt={name} />
-        <h4 className="product-name">{name}</h4>
+        <h3 className="product-name">{name}</h3>
         <p className="product-description">{description}</p>
         <p className="product-price">
           $
@@ -12,7 +12,9 @@ const Product = ({ src, name, description, price, onCheckout }) => {
             minimumFractionDigits: 2,
           })}
         </p>
-        <button onClick={onCheckout}>Buy Now</button>
+        <button className="buy-now" onClick={onCheckout}>
+          Buy Now
+        </button>
       </li>
     </div>
   );

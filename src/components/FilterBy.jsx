@@ -1,8 +1,14 @@
-const FilterBy = () => {
+const FilterBy = ({ setFilterBy }) => {
   return (
-    <div className="filter-by">
-      <label htmlFor="category">Filter by </label>
-      <select id="category" defaultValue="all">
+    <div className="filter-by-container">
+      <label className="filter-by-label" htmlFor="category">
+        Filter by{" "}
+      </label>
+      <select
+        id="category"
+        defaultValue="all"
+        onChange={(e) => setFilterBy(e.target.value)}
+      >
         <option value="all">All</option>
         <option value="bread">Pastry</option>
         <option value="chocolate">Chocolate</option>

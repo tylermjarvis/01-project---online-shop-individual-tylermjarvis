@@ -5,11 +5,11 @@ const ImageBanner = () => {
   return (
     <div className="image-container">
       <img className="image-banner" src={banner} alt="Japanese snacks" />
-      {/* <div className="overlay-container overlay-2">
-        <a className="overlay-products-page-link" href="../index.html">
+      <div className="vertical-center">
+        <a className="overlay-link" href="../index.html">
           Shop Now
         </a>
-      </div> */}
+      </div>
     </div>
   );
 };

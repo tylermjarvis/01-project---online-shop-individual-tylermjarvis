@@ -1,7 +1,7 @@
 const FilterBy = ({ setFilterBy }) => {
   return (
     <div className="filter-by-container">
-      <label className="filter-by-label" htmlFor="category">
+      <label className="filter-by-label bolder" htmlFor="category">
         Filter by{" "}
       </label>
       <select

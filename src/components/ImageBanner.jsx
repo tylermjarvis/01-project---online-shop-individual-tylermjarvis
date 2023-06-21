@@ -6,7 +6,7 @@ const ImageBanner = () => {
     <div className="image-container">
       <img className="image-banner" src={banner} alt="Japanese snacks" />
       <div className="vertical-center">
-        <a className="overlay-link" href="../index.html">
+        <a className="overlay-link bolder" href="../index.html">
           Shop Now
         </a>
       </div>

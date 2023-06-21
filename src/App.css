@@ -17,34 +17,38 @@
 
 /*-- Generalised Styling --*/
 body {
-    font-family: "Courier New", Courier, monospace;
-    line-height: 1.5;
-    background: var(--background-color);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  background: var(--background-color);
+}
+
+.bolder {
+  font-weight: bolder;
 }
 
 /*-- Mobile View --*/
 /*-- Header --*/
 .header-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0.5rem;
-    background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
 }
 
 .logo {
-    width: 40%;
-    height: auto;
-    justify-self: center;
-    border-radius: 0.5rem;
-    margin-bottom: 0.8rem;
-    margin-top: 0.5rem;
+  width: 40%;
+  height: auto;
+  justify-self: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .shop-name {
-    justify-self: center;
-    font-size: 2.8rem;
-    color: var(--font-color);
-    text-align: center;
+  justify-self: center;
+  font-size: 2.8rem;
+  color: var(--font-color);
+  text-align: center;
 }
 
 /*-- Image Banner --*/
@@ -69,7 +73,6 @@ body {
 
 .overlay-link {
   color: white;
-  font-weight: bolder;
   font-size: 1.2rem;;
   padding: 1rem;
   background-color: var(--primary-color);
@@ -105,7 +108,6 @@ body {
 }
 
 .filter-by-label {
-  font-weight: bolder;
   color: var(--font-color);
 }
 
@@ -114,7 +116,6 @@ body {
 }
 
 .sort-by-label {
-  font-weight: bolder;
   color: var(--font-color);
 }
 
@@ -157,7 +158,6 @@ body {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
   text-align: right;
-  font-weight: bolder;
   color: var(--font-color);
 }
 
@@ -168,7 +168,6 @@ body {
   border: none;
   border-radius: 0.5rem;
   color: white;
-  font-weight: bolder;
   font-size: 1.2rem;
   box-shadow: 0.2rem 0.2rem 0.8rem #e0c1b2;
 }
@@ -199,7 +198,7 @@ body {
 }
 
 .contact-title {
-  text-align:center;
+  text-align: center;
 }
 
 .contact-details-list {
@@ -214,12 +213,12 @@ body {
 
 /*-- Tablet View --*/
 @media screen and (min-width: 45rem) {
-  .logo {
-    width: 28%;
+.logo {
+  width: 28%;
 }
 
 .shop-name {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .overlay-link {
@@ -237,8 +236,8 @@ body {
 }
   
 .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
 }
 
 .product-item {
@@ -273,20 +272,20 @@ body {
 }
 
 .header-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }
 
 .logo {
-    width: 25%;
-    height: auto;
-    justify-self: right;
+  width: 25%;
+  height: auto;
+  justify-self: right;
 }
 
 .shop-name {
-    justify-self: center;
-    align-self: center;
-    font-size: 3rem;
+  justify-self: center;
+  align-self: center;
+  font-size: 3rem;
 }
 
 .image-banner {
@@ -296,7 +295,7 @@ body {
 }
 
 .special-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .filter-by-label {
@@ -304,7 +303,7 @@ body {
 }
   
 .product-grid {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .product-description {

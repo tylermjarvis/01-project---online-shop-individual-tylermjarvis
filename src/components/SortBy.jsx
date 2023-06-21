@@ -5,7 +5,7 @@ const SortBy = ({ setSortBy }) => {
 
   return (
     <div className="sort-by-container">
-      <label className="sort-by-label" htmlFor="sort">
+      <label className="sort-by-label bolder" htmlFor="sort">
         Sort By{" "}
       </label>
       <select id="sort" onChange={onChange}>

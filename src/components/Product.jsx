@@ -4,14 +4,14 @@ const Product = ({ src, name, description, price, onCheckout }) => {
       <img className="product-image" src={src} alt={name} />
       <h3 className="product-name">{name}</h3>
       <p className="product-description">{description}</p>
-      <p className="product-price">
+      <p className="product-price bolder">
         $
         {price.toLocaleString("en-NZ", {
           maximumFractionDigits: 2,
           minimumFractionDigits: 2,
         })}
       </p>
-      <button className="buy-now" onClick={onCheckout}>
+      <button className="buy-now bolder" onClick={onCheckout}>
         Buy Now
       </button>
     </li>
